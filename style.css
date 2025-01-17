@@ -5,6 +5,7 @@ header {
     background-color: rgb(98, 149, 214); 
     padding: 50px;
      margin: 20px;
+     color: white;
 }
 
 .container {
@@ -25,4 +26,9 @@ header {
     color: white; 
     font-size: 16px;
   }
-  
+.result {
+  background-color:rgb(19, 199, 199);
+  width: 100px;
+  height: 20px;
+  text-align: center;
+}
