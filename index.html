@@ -1,24 +1,21 @@
-<!DOCTYPE html>
 <html>
-    <head>
-        <title>Rock, Paper, Scissors.</title>
-        <link rel="stylesheet" href="style.css">
-        
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    </head>
+<head>
+    <title>Rock, Paper, Scissors.</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
 <body>
     <header>
         <h1>Rock, Paper, Scissors</h1>
-        <div class="playername">
-          <h1> <p id="story"></p> </h1> 
-            </div>
+        
+        <h1> <p id="message"></p> </h1>
+        </div>
     </header>
     <div class="container">
         <div class="boxes">
-            <div id="player-box" class="big-box">?</div>
-            <div id="computer-box" class="big-box">?</div>
+            <div id="player-box" class="big-box"></div>
+            <div id="computer-box" class="big-box"></div>
         </div>
         <div id="scoreboard" class="scoreboard">
             <div>Rounds Played: <span id="rounds-played">0</span>/5</div>
@@ -26,21 +23,21 @@
             <div>Computer Wins: <span id="computer-score">0</span></div>
             <button id="reset-button" onclick="resetGame()">Reset</button>
         </div>
-        <div id="result" class="result-box">Result: Tie</div>
+        <div id="result" class="result-box">Result: </div>
         <div class="instructions">Click the buttons below</div>
         <div class="buttons">
             <button class="choice" onclick="playGame('rock')">
-                <img src="rock.jpg" alt="Rock">
+            <img src="rock.jpg" alt="Rock" height=50 width=50>
             </button>
             <button class="choice" onclick="playGame('paper')">
-                <img src="paper.jpg" alt="Paper">
+            <img src="paper.jpg" alt="Paper" height=50 width=50>
             </button>
             <button class="choice" onclick="playGame('scissors')">
-                <img src="scissors.jpg" alt="Scissors">
+            <img src="scissors.jpg" alt="Scissors" height=50 width=50>
             </button>
-        </div>        
         </div>
-    <!-- /div -->
+    </div>
+    
     <script src="script.js"></script>
 </body>
 </html>
